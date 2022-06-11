@@ -1,5 +1,5 @@
 const container = document.querySelector(".container");
-const gridItem = document.querySelector(".grid-item");
+const gridItem = document.querySelectorAll(".grid-item");
 
 function makeGrid(rows, cols) {
   container.style.setProperty("--grid-rows", rows);
