@@ -8,8 +8,6 @@ function makeGrid(rows, cols) {
   for (i = 0; i < rows * cols; i++) {
     const gridBox = document.createElement("div");
 
-    gridBox.innerText = i + 1;
-
     container.appendChild(gridBox).className = "grid-item";
   }
 }
