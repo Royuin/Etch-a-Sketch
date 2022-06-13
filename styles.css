@@ -14,11 +14,7 @@ body {
   margin: 20px 50em;
 }
 
-.cell {
+.grid-item {
   border: solid black 1px;
   padding: 20px;
-}
-
-.change-background-color {
-  background-color: black;
 }
