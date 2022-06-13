@@ -1,5 +1,4 @@
 const container = document.querySelector(".container");
-const gridItem = document.querySelectorAll(".grid-item");
 
 function makeGrid(rows, cols) {
   container.style.setProperty("--grid-rows", rows);
@@ -7,10 +6,12 @@ function makeGrid(rows, cols) {
   container.style.setProperty("--grid-cols", cols);
 
   for (i = 0; i < rows * cols; i++) {
-    const gridBox = document.createElement("div");
+    const cell = document.createElement("div");
 
-    container.appendChild(gridBox).className = "grid-item";
+    container.appendChild(cell).className = "cell";
   }
 }
 
 makeGrid(16, 16);
+
+const cell = document.querySelectorAll(".cell");
