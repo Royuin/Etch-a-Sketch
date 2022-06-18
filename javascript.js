@@ -25,3 +25,9 @@ let cell = document.querySelectorAll("#cell");
 // }
 
 // addHoverListener();
+
+cell.forEach((cell) => {
+  cell.addEventListener("hover", () => {
+    cell.classList.toggle("change-background-color");
+  });
+});
