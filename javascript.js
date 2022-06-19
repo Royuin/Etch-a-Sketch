@@ -28,6 +28,6 @@ let cell = document.querySelectorAll("#cell");
 
 cell.forEach((cell) => {
   cell.addEventListener("mouseover", () => {
-    cell.classList.toggle("change-background-color");
+    cell.classList.add("change-background-color");
   });
 });
