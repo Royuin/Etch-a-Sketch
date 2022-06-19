@@ -18,6 +18,8 @@ let cell = document.querySelectorAll("#cell");
 
 cell.forEach((cell) => {
   cell.addEventListener("mouseover", () => {
-    cell.classList.add("change-background-color");
+    let colors = ["#ff0000", "#00ff00", "#0000ff"];
+    let random_color = colors[Math.floor(Math.random() * colors.length)];
+    cell.style.backgroundColor = random_color;
   });
 });
