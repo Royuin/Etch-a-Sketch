@@ -16,16 +16,6 @@ makeGrid(16, 16);
 
 let cell = document.querySelectorAll("#cell");
 
-// function addHoverListener() {
-//   for (let i = 0; i < cell.length; i++) {
-//     cell[i].addEventListener("hover", function (e) {
-//       e.target.style.backgroundColor = "black";
-//     });
-//   }
-// }
-
-// addHoverListener();
-
 cell.forEach((cell) => {
   cell.addEventListener("mouseover", () => {
     cell.classList.add("change-background-color");
