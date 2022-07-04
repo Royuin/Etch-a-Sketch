@@ -22,7 +22,7 @@ body {
   background-color: black;
 }
 
-.grid-size-button {
+.grid-size-button-wrapper {
   display: flex;
   justify-content: center;
   padding: 20px;
