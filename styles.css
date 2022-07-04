@@ -1,6 +1,4 @@
 body {
-  display: flex;
-  justify-content: center;
 }
 :root {
   --grid-cols: 1;
@@ -21,4 +19,9 @@ body {
 
 .change-background-color {
   background-color: black;
+}
+
+.grid-size-button {
+  display: flex;
+  justify-content: center;
 }
