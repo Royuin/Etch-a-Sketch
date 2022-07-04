@@ -1,4 +1,5 @@
 body {
+  background-color: #fbeee4;
 }
 :root {
   --grid-cols: 1;
@@ -24,4 +25,5 @@ body {
 .grid-size-button {
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
