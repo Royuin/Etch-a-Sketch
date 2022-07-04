@@ -25,5 +25,8 @@ body {
 .grid-size-button-wrapper {
   display: flex;
   justify-content: center;
+}
+
+.grid-size-button {
   padding: 20px;
 }
