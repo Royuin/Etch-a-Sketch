@@ -23,3 +23,5 @@ cell.forEach((cell) => {
     cell.style.backgroundColor = random_color;
   });
 });
+
+const gridSizeButton = document.querySelector(".grid-size-button");
