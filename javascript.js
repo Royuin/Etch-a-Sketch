@@ -25,3 +25,7 @@ cell.forEach((cell) => {
 });
 
 const gridSizeButton = document.querySelector(".grid-size-button");
+
+gridSizeButton.addEventListener("click", () => {
+  prompt("What size grid would you like?");
+});
