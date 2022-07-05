@@ -28,6 +28,9 @@ const gridSizeButton = document.querySelector(".grid-size-button");
 
 function gridSizePrompt() {
   answer = prompt("What size grid would you like?");
+  if (answer > 100) {
+    alert("Choose a number no greater than 100");
+  }
 }
 
 gridSizeButton.addEventListener("click", () => {
