@@ -32,6 +32,8 @@ function gridSizePrompt() {
     alert("Choose a number no greater than 100");
   } else if (Number.isInteger(answer) === false) {
     alert("Must be a whole number");
+  } else {
+    return answer;
   }
 }
 
