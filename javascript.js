@@ -30,6 +30,8 @@ function gridSizePrompt() {
   answer = prompt("What size grid would you like?");
   if (answer > 100) {
     alert("Choose a number no greater than 100");
+  } else if (Number.isInteger(answer) === false) {
+    alert("Must be a whole number");
   }
 }
 
