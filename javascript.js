@@ -39,6 +39,12 @@ function gridSizePrompt() {
   }
 }
 
+function deleteAndCreateGrid() {
+  let myNewGrid = new makeGrid(answerNum, answerNum);
+  return myNewGrid;
+}
+
 gridSizeButton.addEventListener("click", () => {
   gridSizePrompt();
+  deleteAndCreateGrid();
 });
