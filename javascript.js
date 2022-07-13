@@ -40,6 +40,9 @@ function gridSizePrompt() {
 }
 
 function deleteAndCreateGrid() {
+  while (container.firstChild) {
+    container.removeChild(container.lastChild);
+  }
   let myNewGrid = new makeGrid(answerNum, answerNum);
   return myNewGrid;
 }
