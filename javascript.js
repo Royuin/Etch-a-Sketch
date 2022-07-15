@@ -16,14 +16,16 @@ makeGrid(16, 16);
 
 let cell = document.querySelectorAll("#cell");
 
-cell.forEach((cell) => {
-  cell.addEventListener("mouseover", () => {
-    let colors = ["#ff0000", "#00ff00", "#0000ff"];
-    let random_color = colors[Math.floor(Math.random() * colors.length)];
-    cell.style.backgroundColor = random_color;
+function createHover() {
+  cell.forEach((cell) => {
+    cell.addEventListener("mouseover", () => {
+      let colors = ["#ff0000", "#00ff00", "#0000ff"];
+      let random_color = colors[Math.floor(Math.random() * colors.length)];
+      cell.style.backgroundColor = random_color;
+    });
   });
-});
-
+}
+createHover();
 const gridSizeButton = document.querySelector(".grid-size-button");
 
 function gridSizePrompt() {
@@ -44,7 +46,7 @@ function deleteAndCreateGrid() {
     container.removeChild(container.lastChild);
   }
   let myNewGrid = new makeGrid(answerNum, answerNum);
-  return myNewGrid;
+  myNewGrid;
 }
 
 gridSizeButton.addEventListener("click", () => {
