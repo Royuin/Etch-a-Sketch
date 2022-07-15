@@ -14,9 +14,8 @@ function makeGrid(rows, cols) {
 
 makeGrid(16, 16);
 
-let cell = document.querySelectorAll("#cell");
-
 function createHover() {
+  let cell = document.querySelectorAll("#cell");
   cell.forEach((cell) => {
     cell.addEventListener("mouseover", () => {
       let colors = ["#ff0000", "#00ff00", "#0000ff"];
