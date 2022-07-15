@@ -32,9 +32,9 @@ function gridSizePrompt() {
   answerNum = Number(answer);
 
   if (answerNum > 100) {
-    alert("Choose a number no greater than 100");
+    return alert("Choose a number no greater than 100");
   } else if (Number.isInteger(answerNum) === false) {
-    alert("Must be a whole number");
+    return alert("Must be a whole number");
   } else {
     return answerNum;
   }
@@ -46,6 +46,7 @@ function deleteAndCreateGrid() {
   }
   let myNewGrid = new makeGrid(answerNum, answerNum);
   myNewGrid;
+  createHover();
 }
 
 gridSizeButton.addEventListener("click", () => {
