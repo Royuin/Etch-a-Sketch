@@ -50,6 +50,9 @@ function deleteAndCreateGrid() {
 }
 
 gridSizeButton.addEventListener("click", () => {
-  gridSizePrompt();
-  deleteAndCreateGrid();
+  if (gridSizePrompt() !== answerNum) {
+    return;
+  } else {
+    deleteAndCreateGrid();
+  }
 });
