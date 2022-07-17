@@ -13,6 +13,7 @@ body {
   margin: 20px auto;
   width: 750px;
   height: 750px;
+  background-color: white;
 }
 
 #cell {
