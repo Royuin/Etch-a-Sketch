@@ -11,6 +11,8 @@ body {
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
   margin: 20px 50em;
+  width: 750px;
+  height: 750px;
 }
 
 #cell {
