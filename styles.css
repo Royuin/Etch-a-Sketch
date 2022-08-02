@@ -24,14 +24,14 @@ body {
   background-color: black;
 }
 
-.grid-size-button-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .grid-size-button {
   padding: 20px 100px;
   border-radius: 1rem;
   font-size: 1.25em;
   background-color: white;
+}
+
+.all-buttons {
+  display: flex;
+  justify-content: center;
 }
