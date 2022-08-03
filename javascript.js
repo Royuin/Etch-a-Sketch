@@ -26,6 +26,9 @@ function createRgbHover() {
 }
 createHover();
 const gridSizeButton = document.querySelector(".grid-size-button");
+const rgbButton = document.querySelector(".RGB-button");
+const blackButton = document.querySelector(".black-button");
+const eraserButton = document.querySelector(".eraser-button");
 
 function gridSizePrompt() {
   answer = prompt("What size grid would you like?");
