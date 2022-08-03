@@ -14,7 +14,7 @@ function makeGrid(rows, cols) {
 
 makeGrid(16, 16);
 
-function createHover() {
+function createRgbHover() {
   let cell = document.querySelectorAll("#cell");
   cell.forEach((cell) => {
     cell.addEventListener("mouseover", () => {
