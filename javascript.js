@@ -24,7 +24,7 @@ function createRgbHover() {
     });
   });
 }
-createHover();
+createRgbHover();
 const gridSizeButton = document.querySelector(".grid-size-button");
 const rgbButton = document.querySelector(".RGB-button");
 const blackButton = document.querySelector(".black-button");
@@ -58,4 +58,15 @@ gridSizeButton.addEventListener("click", () => {
   } else {
     deleteAndCreateGrid();
   }
+});
+
+rgbButton.addEventListener("click", () => {
+  let cell = document.querySelectorAll("#cell");
+  cell.forEach((cell) => {
+    cell.addEventListener("mouseover", () => {
+      let colors = ["#ff0000", "#00ff00", "#0000ff"];
+      let random_color = colors[Math.floor(Math.random() * colors.length)];
+      cell.style.backgroundColor = random_color;
+    });
+  });
 });
