@@ -36,3 +36,8 @@ body {
   background-color: white;
   margin: 0.5rem;
 }
+
+.button:hover {
+  background-color: #d1bea8;
+  color: white;
+}
