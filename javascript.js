@@ -79,3 +79,12 @@ blackButton.addEventListener("click", () => {
     });
   });
 });
+
+eraserButton.addEventListener("click", () => {
+  let cell = document.querySelectorAll("#cell");
+  cell.forEach((cell) => {
+    cell.addEventListener("mouseover", () => {
+      cell.style.backgroundColor = "white";
+    });
+  });
+});
